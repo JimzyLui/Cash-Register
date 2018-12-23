@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+      integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="register">
+      <div id="calculator">
+        <div id="screenPanel">
+          <span id="screenPreview"></span>
+          <div id="screen"></div>
+        </div>
+        <div id="controls">
+          <div class="container" id="leftPanel">
+            <div class="container" id="blankPanelBottom">
+              <button class="spacer"></button> <button class="spacer"></button>
+              <button class="spacer"></button> <button class="spacer"></button>
+            </div>
+            <div class="container" id="numberPanel">
+              <div class="container col" id="col1">
+                <button id="btn7">7</button> <button id="btn4">4</button>
+                <button id="btn1">1</button> <button id="btn0">0</button>
+              </div>
+              <div class="container col" id="col2">
+                <button id="btn8">8</button> <button id="btn5">5</button>
+                <button id="btn2">2</button> <button id="btn00">00</button>
+              </div>
+              <div class="container col" id="col3">
+                <button id="btn9">9</button> <button id="btn6">6</button>
+                <button id="btn3">3</button> <button id="btnPeriod">.</button>
+              </div>
+              <div class="container col" id="col4">
+                <button id="btnDivide">
+                  <i fas class="fas fa-divide"></i>
+                </button>
+                <button id="btnMultiply">
+                  <i fas class="fas fa-times"></i>
+                </button>
+                <button id="btnSubtract">
+                  <i fas class="fas fa-minus"></i>
+                </button>
+                <button id="btnAdd"><i fas class="fas fa-plus"></i></button>
+              </div>
+            </div>
+            <!-- numberPanel -->
+          </div>
+          <!-- leftPanel -->
+          <div class="container" id="cashierPanel">
+            <div class="container col" id="col5">
+              <button id="btnClear">Clear</button>
+              <button id="btnBalance">Balance</button>
+              <button id="btnDeposit">Deposit</button>
+              <button id="btnWithdraw">Withdraw</button>
+              <button id="btnEquals"><i fas class="fas fa-equals"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="drawer"></div>
+    </div>
+    <script src="js/calculator.js"></script>
+    <script src="js/cash_register.js"></script>
+  </body>
+</html>
